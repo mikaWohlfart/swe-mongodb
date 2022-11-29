@@ -1,0 +1,13 @@
+use('mongodbVSCodePlaygroundDB');
+
+db.privatbesitz.drop();
+
+db.privatbesitz.insertMany([
+    {'item': 'Lamborghini', 'modell': 'Urus', 'baujahr': new Date('2014-03-01'), 'price': 120000},
+    {'item': 'Cube', 'price': 900, 'gang': 21, 'zoll': 28, 'kaufdatum': new Date('2019-09-03') },
+    {'item': 'computer', 'mainboard':{'name': 'ASUS ROG Strix B550-F Gaming', 
+    'baujahr': new Date('2020-05-20'), 'formfaktor': 'ATX', 'sockel': 'AMD AM4', 
+    'chipsatz': 'AMD B550', }, 'cpu': {'name': 'AMD Ryzen 5 5600X', 'kerne': 6, 'thread': 12, 'ghz': 4.6,}},
+    {'item': 'drohne', 'bezeichnung': 'DJI Mini 3 Pro', 'preis': 950, 'akkulaufzeit': 30},
+]); 
+
