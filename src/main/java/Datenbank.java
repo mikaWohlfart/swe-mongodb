@@ -23,7 +23,6 @@ public class Datenbank {
 
 
     public Datenbank() {
-        connectionString = "mongodb+srv://dbuser:x0nlXgyWtELMYtQS@cluster1.2m2xwhk.mongodb.net/?retryWrites=true&w=majority";
         databasename = "mongodbVSCodePlaygroundDB";
         collectionname = "privatbesitz";
         MongoClient mongoClient = MongoClients.create(connectionString);
@@ -118,9 +117,9 @@ public class Datenbank {
 
         Datenbank db = new Datenbank();
         db.insert(documents);
-        db.select();
-        db.selectSpecific();
-        db.update();
+        //db.select();
+        //db.selectSpecific();
+        //db.update();
         //db.delete();
     }
 
